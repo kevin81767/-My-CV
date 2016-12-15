@@ -1,2 +1,3 @@
-# -My-CV
-A template that i designed for my CV. You can check on my website http://www.kondorproject.site88.net
+A template that i designed for my online CV.
+
+Using: HTML5 , CSS3 , Bootstrap , Javascript(Jquery)
