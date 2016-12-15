@@ -8,16 +8,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
-    <meta name="author" content="Kevin Nyawakira web developer">    
+    <meta name="description" content="About Kevin Nyawakira - CV">
+    <meta name="author" content="Kevin Nyawakira(kondor) web developer">    
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Global including jquery plugin-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!--Global icon-->
+    <link rel="icon"  href="logo1.gif">
     
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles-6.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -31,10 +36,12 @@
             <div class="profile-container">
                 <img class="profile" id='kevin' src="assets/images/kevin.jpg" alt="" />
                 <h1 class="name">Kevin Nyawakira</h1>
-                <h3 class="tagline">Full Stack Developer</h3>
+                <h2>Freelancer</h2>
+                <h3 class="tagline">Full Stack web Developer</h3>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
+            <p>Want a website to be built? you can contact me on</p>
                 <ul class="list-unstyled contact-list">
                     <li class="email"><i class="fa fa-envelope"></i><a href="mailto: kevin81767@gmail.com">kevin81767@gmail.com</a></li>
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel:0784438186">+250784438186</a></li>
@@ -82,7 +89,7 @@
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
                 <div class="intro">
-                    <p>Here is some projects i have done at the moment.</p>
+                    <p>Here are some projects i have done :</p>
                 </div><!--//intro-->
                 <div class="item">
                     <span class="project-title"><a href="http://github.com/kevin81767">Auca</a></span> - <span class="project-tagline">A social network for school where teache and student can interact each other. Teachers can give assignment,announcement,etc... </span>
@@ -95,54 +102,56 @@
                     <span class="project-title"><a href="#" target="_blank">CVemplate</a></span> - <span class="project-tagline">You're on it. It's this template i developed for create my CV</span>
                 </div><!--//item-->
                 <hr>
-                <h3>The best projects are in coming in few months. ;)</h3>
+                <h3>The best projects are coming in few months. ;)</h3>
                 <hr>
             </section><!--//section-->
             
             <section class="skills-section section">
                 <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-                <div class="skillset">        
-                    <div class="item">
-                        <h3 class="level-title">Python</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="75%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Javascript &amp; jQuery</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="90%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">Angular</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="60%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS3</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="97%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                    <div class="item">
-                        <h3 class="level-title">PHP</h3>
-                        <div class="level-bar">
-                            <div class="level-bar-inner" data-level="85%">
-                            </div>                                      
-                        </div><!--//level-bar-->                                 
-                    </div><!--//item-->
-                    
-                </div>  
+                <div id="toFade">
+                    <div class="skillset">        
+                        <div class="item">
+                            <h3 class="level-title">Python</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="75%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                        
+                        <div class="item">
+                            <h3 class="level-title">Javascript &amp; jQuery</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="90%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                        
+                        <div class="item">
+                            <h3 class="level-title">Angular</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="60%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                        
+                        <div class="item">
+                            <h3 class="level-title">HTML5 &amp; CSS3</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="97%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                        
+                        <div class="item">
+                            <h3 class="level-title">PHP</h3>
+                            <div class="level-bar">
+                                <div class="level-bar-inner" data-level="85%">
+                                </div>                                      
+                            </div><!--//level-bar-->                                 
+                        </div><!--//item-->
+                        
+                    </div> 
+                </div> 
             </section><!--//skills-section-->
             
         </div><!--//main-body-->
@@ -150,13 +159,14 @@
  
     <footer class="footer">
         <div class="text-center">
-                <small class="copyright">Designed by <a href="http://www.linkedin.com/in/kevin-nyawakira-558307129" target="_blank">Kevin Nyawakira</a>
+                <small class="copyright">Designed by <a href="http://www.facebook.com/nyawakira.kevin" target="_blank">Kevin Nyawakira</a>
         </div><!--//container-->
     </footer><!--//footer-->
  
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+     
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>

@@ -8,6 +8,10 @@
 */
 /* styles-3.css */
 /* ======= Base ======= */
+#kevin
+{
+  border-radius: 20px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #545E6C;
