@@ -234,6 +234,7 @@ p {
 .skillset .item {
   margin-bottom: 15px;
   overflow: hidden;
+  -webkit-animation-duration:5s;
 }
 .skillset .level-title {
   font-size: 14px;
